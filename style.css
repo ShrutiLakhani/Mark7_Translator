@@ -1,0 +1,37 @@
+body
+{
+  background-color: lavender;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    width:50vw;
+
+}
+button
+{
+    background-color:lightgrey;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    
+}
+ textarea
+    {
+    width: 80%;
+    height: 10vh;
+    display: block;
+    margin: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    }    
+    #output
+    {
+        border: 1px solid black;
+        height: 10vh;
+        width: 80%;
+        margin: 1rem;
+        padding: 1rem;
+    }
