@@ -1,8 +1,7 @@
 var btnTranslate = document.querySelector("#btn-translate");
-var txtInput = document.querySelector("#txt-input");
+var txtInput = document.querySelector(".txt-input");
 var outputDiv = document.querySelector("#output");
-console.log(txtInput.value);
-var serverURL = "https://api.funtranslations.com/translate/Pirate.json"
+var serverURL = "https://api.funtranslations.com/translate/pirate.json"
 function getTranslationUrl(text)
 {
   return serverURL + "?" + "text=" + text
@@ -16,6 +15,7 @@ function errorHandler(error)
 
 function clickHandler()
 {
+   
     var inputText = txtInput.value;
   fetch(getTranslationUrl(inputText))
   .then(response => response.json())
