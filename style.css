@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body
 {
-  background-color: lavender;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:lavender;
 }
 .container
 {
@@ -9,29 +16,41 @@ body
     width:50vw;
 
 }
-button
+#btn-translate
 {
-    background-color:lightgrey;
-    
     display: flex;
     align-items: center;
+    margin:auto;
     justify-content: center;
-    width: 80px;
+    width: 100px;
+    padding: 0.5rem;
+    border-radius: .5rem;
     
 }
- textarea
-    {
-    width: 80%;
+.txt-input
+{
+width: 80%;
+height: 10vh;
+display: block;
+margin:auto;
+margin: 1rem;
+padding: 1rem 1rem 1rem 1rem;
+background: transparent;
+}    
+#output
+{
+    border: 1px solid black;
     height: 10vh;
-    display: block;
+    width: 80%;
     margin: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
-    }    
-    #output
-    {
-        border: 1px solid black;
-        height: 10vh;
-        width: 80%;
-        margin: 1rem;
-        padding: 1rem;
-    }
+    padding: 1rem;
+    background-color: transparent;
+}
+.header
+{
+    text-align: center;
+}
+.center
+{
+align-items: center;
+}
